@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-03T19:43:46.028Z</updated>
+  <updated>2020-08-03T20:42:02.744Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,34 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://yoursite.com/2020/08/05/test/"/>
-    <id>http://yoursite.com/2020/08/05/test/</id>
-    <published>2020-08-04T17:56:20.000Z</published>
-    <updated>2020-08-03T19:43:46.028Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="dadadad"><a href="#dadadad" class="headerlink" title="dadadad"></a>dadadad</h2><h2 id="骄傲大大"><a href="#骄傲大大" class="headerlink" title="骄傲大大"></a>骄傲大大</h2>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;dadadad&quot;&gt;&lt;a href=&quot;#dadadad&quot; class=&quot;headerlink&quot; title=&quot;dadadad&quot;&gt;&lt;/a&gt;dadadad&lt;/h2&gt;&lt;h2 id=&quot;骄傲大大&quot;&gt;&lt;a href=&quot;#骄傲大大&quot; class=&quot;headerlink&quot; titl
-      
-    
-    </summary>
-    
-    
-    
-      <category term="Blog" scheme="http://yoursite.com/tags/Blog/"/>
-    
-      <category term="Hexo" scheme="http://yoursite.com/tags/Hexo/"/>
-    
-      <category term="GitHub" scheme="http://yoursite.com/tags/GitHub/"/>
-    
-  </entry>
   
   <entry>
     <title>从零开始搭建Blog</title>
