@@ -807,27 +807,25 @@ jsonContent:
         <script src="/scripts/share.js" async></script>    
      
 
-    <!-- 引用依赖 -->
     <link rel="stylesheet" 
     href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/laurelcafe/item@1.0/APlayer.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+        
+        <div class="aplayer" 
+        data-id="5160016072" 
+        data-server="netease" 
+        data-type="playlist" 
+        data-fixed="true" 
+        data-autoplay="true" 
+        data-order="random" 
+        data-volume="0.3" 
+        data-theme="#d9f1ff" 
+        data-preload="auto" >
+        </div>
 
-    <!-- 我使用的APlayer本体 -->
-    <div class="aplayer" 
-    data-id="5160016072" 
-    data-server="netease" 
-    data-type="playlist" 
-    data-fixed="true" 
-    data-autoplay="true" 
-    data-order="random" 
-    data-volume="0.3" 
-    data-theme="#d9f1ff" 
-    data-preload="auto" >
-    </div>
-    <!--如果将本体放在body里面导致页面加载出现问题，请尝试放到body体后面-->
-    
     <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/noireswim.model.json"},"display":{"position":"right","width":250,"height":500,"vOffset":0},"mobile":{"show":false},"react":{"opacity":1},"dialog":{"enable":true,"hitokoto":true},"log":false});</script></body>
+    
 </html>
 
 
