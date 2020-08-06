@@ -17,7 +17,7 @@
     <meta name="renderer" content="webkit">
     <meta name="copyright" content="Leafs">
     
-    <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
+    <meta name="keywords" content="hexo,Leafs,hexo-blog">
     
     <meta name="description" content="">
     <meta name="description" content="上一篇文章已经把Blog建立起来了，我觉得需要再额外加点别的东西。看了几个别人的Blog，觉得Live2D插件比较合适，所以记录下安装过程和遇到的问题。 使用相关 Live2D插件：hexo-helper-live2d Live2D：live2d  Live2D插件具体教程也可以参考hexo-helper-live2d中文教程。 这个插件的作用就是在向的Hexo里放上一只萌萌哒二次元看板娘，有些模">
@@ -506,28 +506,26 @@ height:50vh;
     <!-- 评论插件 -->
     <!-- 来必力City版安装代码 -->
 
+    <div id="lv-container" data-id="city" data-uid= MTAyMC81MTI2NC8yNzc0NQ==>
+        <script type="text/javascript">
+            (function (d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') { return; }
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+
 <!-- City版安装代码已完成 -->
     
     
     <!-- gitalk评论 -->
 
-    <div id="comment-container"></div>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.6.0/dist/gitalk.css">
-    <script src="https://cdn.jsdelivr.net/npm/gitalk@1.6.0/dist/gitalk.min.js"></script>
-    <script>
-        var gitalk = new Gitalk({
-            clientID: '842cc9d59664b2416e39',
-            clientSecret: '97e2e7b0aca20eabc137415592588cb18ae7bc0b',
-            id: '1596558740000',
-            repo: 'laurelcafe.github.io',
-            owner: '43950231',
-            admin: 43950231,
-            createIssueManually: true,
-            distractionFreeMode: false
-        })
-        gitalk.render('comment-container')
-    </script>
-    
     <!-- utteranc评论 -->
 
     <!-- partial('_partial/comment/changyan') -->
