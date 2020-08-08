@@ -2,35 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2020/08/04/Build_a_Blog/</loc>
+    <loc>http://laurelcafe.github.io/2020/08/04/Build_a_Blog/</loc>
     
     <lastmod>2020-08-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2020/08/05/Build_a_Blog_3/</loc>
+    <loc>http://laurelcafe.github.io/2020/08/05/Build_a_Blog_3/</loc>
     
     <lastmod>2020-08-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2020/08/05/Build_a_Blog_2/</loc>
+    <loc>http://laurelcafe.github.io/2020/08/05/Build_a_Blog_2/</loc>
     
     <lastmod>2020-08-06</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/about/index.html</loc>
+    <loc>http://laurelcafe.github.io/about/index.html</loc>
     
     <lastmod>2020-08-02</lastmod>
     
   </url>
   
   <url>
-    <loc>http://yoursite.com/2020/08/02/hello-world/</loc>
+    <loc>http://laurelcafe.github.io/2020/08/02/hello-world/</loc>
     
     <lastmod>2020-08-01</lastmod>
     
@@ -38,58 +38,58 @@
   
 
   <url>
-    <loc>http://yoursite.com/</loc>
-    <lastmod>2020-08-06</lastmod>
+    <loc>http://laurelcafe.github.io/</loc>
+    <lastmod>2020-08-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://yoursite.com/tags/Blog/</loc>
-    <lastmod>2020-08-06</lastmod>
+    <loc>http://laurelcafe.github.io/tags/Blog/</loc>
+    <lastmod>2020-08-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/Hexo/</loc>
-    <lastmod>2020-08-06</lastmod>
+    <loc>http://laurelcafe.github.io/tags/Hexo/</loc>
+    <lastmod>2020-08-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/GitHub/</loc>
-    <lastmod>2020-08-06</lastmod>
+    <loc>http://laurelcafe.github.io/tags/GitHub/</loc>
+    <lastmod>2020-08-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/Live2D/</loc>
-    <lastmod>2020-08-06</lastmod>
+    <loc>http://laurelcafe.github.io/tags/Live2D/</loc>
+    <lastmod>2020-08-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/%E6%A8%A1%E5%9E%8B/</loc>
-    <lastmod>2020-08-06</lastmod>
+    <loc>http://laurelcafe.github.io/tags/%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2020-08-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/%E9%9F%B3%E4%B9%90/</loc>
-    <lastmod>2020-08-06</lastmod>
+    <loc>http://laurelcafe.github.io/tags/%E9%9F%B3%E4%B9%90/</loc>
+    <lastmod>2020-08-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/APlayer/</loc>
-    <lastmod>2020-08-06</lastmod>
+    <loc>http://laurelcafe.github.io/tags/APlayer/</loc>
+    <lastmod>2020-08-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
