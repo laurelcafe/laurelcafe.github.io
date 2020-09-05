@@ -1,0 +1,881 @@
+<!--
+ * @title: 
+ * @subtitle: 
+ * @date: 2020-08-02 03:52:40
+ * @tags: 
+ * - 
+ * - 
+ * - 
+ * @header_image: 
+-->
+<!DOCTYPE html>
+<html lang="zh-Hans">
+    <!-- title -->
+
+
+
+
+<!-- keywords -->
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="author" content="Leafs">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="Leafs">
+    
+    <meta name="keywords" content="hexo,Leafs,Leafs blog">
+    
+    <meta name="description" content="">
+    <meta name="description" content="使用相关 KeepassXC Steam  KeepassXCKeepassXC的基本使用KeepassXC 本身是 Keepass 开源项目的一个分支，不过集成度要比 Keepass 高，不需要下额外的插件，有喜欢用原来版本的也可以去 Keepass 官网下载，然后去 插件 下载自己需要的插件，插件有很多，按照自己的需求下就好。  下载 KeepassXC 并且安装好之后，选择新建数据库或者你之">
+<meta property="og:type" content="article">
+<meta property="og:title" content="KeepassXC的使用">
+<meta property="og:url" content="http://laurelcafe.github.io/2020/09/05/4060261005/index.html">
+<meta property="og:site_name" content="Leafs&#39;s Blog">
+<meta property="og:description" content="使用相关 KeepassXC Steam  KeepassXCKeepassXC的基本使用KeepassXC 本身是 Keepass 开源项目的一个分支，不过集成度要比 Keepass 高，不需要下额外的插件，有喜欢用原来版本的也可以去 Keepass 官网下载，然后去 插件 下载自己需要的插件，插件有很多，按照自己的需求下就好。  下载 KeepassXC 并且安装好之后，选择新建数据库或者你之">
+<meta property="og:locale">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905145033.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905145340.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905145640.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905145737.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905145842.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905150318.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905150846.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905152012.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905152355.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/Screenshot_2020-09-05-15-42-00-832_com.miui.backu.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/Screenshot_2020-09-05-15-41-41-659_com.android.se.jpg">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905154544.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905154949.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905155145.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905155938.png">
+<meta property="article:published_time" content="2020-09-05T06:34:53.000Z">
+<meta property="article:modified_time" content="2020-09-05T08:11:13.397Z">
+<meta property="article:author" content="Leafs">
+<meta property="article:tag" content="Keepass">
+<meta property="article:tag" content="Steam">
+<meta property="article:tag" content="密码">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905145033.png">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    
+    <title>KeepassXC的使用 · Leafs&#39;s Blog</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s infinite;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href= "/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href= "/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+(function( w ){
+	"use strict";
+	// rel=preload support test
+	if( !w.loadCSS ){
+		w.loadCSS = function(){};
+	}
+	// define on the loadCSS obj
+	var rp = loadCSS.relpreload = {};
+	// rel=preload feature support test
+	// runs once and returns a function for compat purposes
+	rp.support = (function(){
+		var ret;
+		try {
+			ret = w.document.createElement( "link" ).relList.supports( "preload" );
+		} catch (e) {
+			ret = false;
+		}
+		return function(){
+			return ret;
+		};
+	})();
+
+	// if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+	// then change that media back to its intended value on load
+	rp.bindMediaToggle = function( link ){
+		// remember existing media attr for ultimate state, or default to 'all'
+		var finalMedia = link.media || "all";
+
+		function enableStylesheet(){
+			link.media = finalMedia;
+		}
+
+		// bind load handlers to enable media
+		if( link.addEventListener ){
+			link.addEventListener( "load", enableStylesheet );
+		} else if( link.attachEvent ){
+			link.attachEvent( "onload", enableStylesheet );
+		}
+
+		// Set rel and non-applicable media type to start an async request
+		// note: timeout allows this to happen async to let rendering continue in IE
+		setTimeout(function(){
+			link.rel = "stylesheet";
+			link.media = "only x";
+		});
+		// also enable media after 3 seconds,
+		// which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+		setTimeout( enableStylesheet, 3000 );
+	};
+
+	// loop through link elements in DOM
+	rp.poly = function(){
+		// double check this to prevent external calls from running
+		if( rp.support() ){
+			return;
+		}
+		var links = w.document.getElementsByTagName( "link" );
+		for( var i = 0; i < links.length; i++ ){
+			var link = links[ i ];
+			// qualify links to those with rel=preload and as=style attrs
+			if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+				// prevent rerunning on link
+				link.setAttribute( "data-loadcss", true );
+				// bind listeners to toggle media back
+				rp.bindMediaToggle( link );
+			}
+		}
+	};
+
+	// if unsupported, run the polyfill
+	if( !rp.support() ){
+		// run once at least
+		rp.poly();
+
+		// rerun poly on an interval until onload
+		var run = w.setInterval( rp.poly, 500 );
+		if( w.addEventListener ){
+			w.addEventListener( "load", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		} else if( w.attachEvent ){
+			w.attachEvent( "onload", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		}
+	}
+
+
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ) );
+</script>
+
+    <link rel="icon" href= "/assets/80420349_p2.ico" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script" />
+    <link rel="preload" href="/scripts/main.js" as="script" />
+    <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin>
+    
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+
+    <script>
+        document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState == 'hidden') {
+            normal_title = document.title;
+            document.title = '摸了！_(xз」∠)_';
+        } else document.title = normal_title;
+    });
+    </script>
+
+<meta name="google-site-verification" content="E19YzBxZDVKc5L0kTiS97J-W1tpQiK3jgzL2ENcWM3M" />
+<meta name="msvalidate.01" content="F5CF6415A44E407258C02D7ED06431C9" />
+
+<meta name="generator" content="Hexo 5.0.0"><link rel="alternate" href="/atom.xml" title="Leafs's Blog" type="application/atom+xml">
+</head>
+
+
+    
+        <body class="post-body">
+    
+    
+<header class="header">
+
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >Leafs&#39;s Blog.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">KeepassXC的使用</a>
+            </div>
+    </div>
+    
+    <a class="home-link" href=/>Leafs's Blog.</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style="
+
+
+
+
+
+
+
+height:50vh;
+">
+    
+    <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/603891.jpg)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            KeepassXC的使用
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+                Keepass使用介绍及steam电脑使用手机令牌
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Keepass">Keepass</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Steam">Steam</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "密码">密码</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">912</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2020/09/05</span>
+                    
+                    <span class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        
+    </div>
+</div>
+        <script>
+ 
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in');
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
+
+  function asyncErr(){
+    console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (cb) { o.addEventListener('load', function (e) { cb(null, e); }, false); }
+    if (err) { o.addEventListener('error', function (e) { err(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  var asyncLoadWithFallBack = function(arr, success, reject) {
+      var currReject = function(){
+        reject()
+        arr.shift()
+        if(arr.length)
+          async(arr[0], success, currReject)
+        }
+
+      async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack([
+    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
+    "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
+    "/lib/webfontloader.min.js"
+  ], asyncCb, asyncErr)
+</script>        
+        <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <h2 id="使用相关"><a href="#使用相关" class="headerlink" title="使用相关"></a>使用相关</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://keepassxc.org/">KeepassXC</a></li>
+<li><a target="_blank" rel="noopener" href="https://store.steampowered.com/">Steam</a></li>
+</ul>
+<h2 id="KeepassXC"><a href="#KeepassXC" class="headerlink" title="KeepassXC"></a>KeepassXC</h2><h3 id="KeepassXC的基本使用"><a href="#KeepassXC的基本使用" class="headerlink" title="KeepassXC的基本使用"></a>KeepassXC的基本使用</h3><p><code>KeepassXC</code> 本身是 <code>Keepass</code> 开源项目的一个分支，不过集成度要比 <code>Keepass</code> 高，不需要下额外的插件，有喜欢用原来版本的也可以去 <a target="_blank" rel="noopener" href="https://keepass.info/">Keepass</a> 官网下载，然后去 <a target="_blank" rel="noopener" href="https://keepass.info/plugins.html">插件</a> 下载自己需要的插件，插件有很多，按照自己的需求下就好。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905145033.png" alt="20200905145033"></p>
+<p>下载 <a target="_blank" rel="noopener" href="https://keepassxc.org/">KeepassXC</a> 并且安装好之后，选择新建数据库或者你之前有使用过相关的可以直接导入，目前是支持导入 <code>Keepass 1</code> 、 <code>1Password</code> 和 <code>CSV文件</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905145340.png" alt="20200905145340"></p>
+<p>新建数据库后输入一个数据库名称，描述可写可不写，后面一步默认就好。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905145640.png" alt="20200905145640"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905145737.png" alt="20200905145737"></p>
+<p>然后输入你数据库的密码作为主密码， <code>这密码千万不能忘，忘了等于所有密码都丢了找不回</code> ，如果有额外需求可以选择下面的额外保护。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905145842.png" alt="20200905145842"></p>
+<p>我之前已经建好了一个，所以就不展示了。</p>
+<p>KeepassXC的自动输入支持网页和应用程序，先去设置里设置好自动输入快捷键。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905150318.png" alt="20200905150318"></p>
+<p>然后添加条目，输入 <code>标题</code> 、 <code>用户名</code> 、 <code>密码</code> ，如果是网站可以把网址填到 <code>网址</code> 的位置。<br>点击左侧的 <code>自动输入</code> ，点击窗口组合下面的 ‘+’ 号，在右侧的窗口标题选择你要用来自动输入的窗口，最后点击 <code>OK</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905150846.png" alt="20200905150846"></p>
+<p>然后你就可以在打开你设定的程序打开时用快捷键自动输入密码了。</p>
+<h3 id="KeepassXC的浏览器链接"><a href="#KeepassXC的浏览器链接" class="headerlink" title="KeepassXC的浏览器链接"></a>KeepassXC的浏览器链接</h3><p>如果每个密码都一个个手输的话，对于浏览器来说的话，那太麻烦了，所以要用浏览器插件链接到数据库自动存储。</p>
+<p>KeepassXC的设置里有浏览器集成，可以根据自己的浏览器选择自己需要的插件。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905152012.png" alt="20200905152012"></p>
+<p>浏览器安装好之后，点击图标，连接到数据库，然后会弹出一个窗口为浏览器命名，随便输，多个浏览器的不要重名就好。我这里已经链接过了，所以就不展示了，不过位置是一样的。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905152355.png" alt="20200905152355"></p>
+<p>这样当你第一次输入完密码的时候，浏览器上方会提示是否要存到 <code>KeepassXC</code> ,选择新增，之后再打开这网页登录的时候就可以自动输入了。</p>
+<p>插件还有别的功能，像如果用户名和密码识别的位置不对，可以选择 <code>选择自定义登录字段</code> ， 可以自己设定 <code>用户名</code> 、 <code>密码</code> 和 <code>TOTP</code> ，右键还能选择生成随机密码等等。</p>
+<h2 id="Steam在PC上使用TOTP"><a href="#Steam在PC上使用TOTP" class="headerlink" title="Steam在PC上使用TOTP"></a>Steam在PC上使用TOTP</h2><p><code>TOTP</code> ，其实是 <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-hans/%E5%9F%BA%E4%BA%8E%E6%97%B6%E9%97%B4%E7%9A%84%E4%B8%80%E6%AC%A1%E6%80%A7%E5%AF%86%E7%A0%81%E7%AE%97%E6%B3%95">基于时间的一次性密码算法</a> ，在Steam上的话就是手机令牌了。</p>
+<p>Steam手机令牌转到电脑上的话，需要手机的备份功能，我是小米手机，所以就用小米手机做演示。</p>
+<p>小米手机选择备份Steam，然后将备份的数据传到电脑。一般备份的位置是 <code>/MIUI/backup/AllBackup/日期/软件名.bak</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/Screenshot_2020-09-05-15-42-00-832_com.miui.backu.jpg" alt="Screenshot_2020-09-05-15-42-00-832_com.miui.backu"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/Screenshot_2020-09-05-15-41-41-659_com.android.se.jpg" alt="Screenshot_2020-09-05-15-41-41-659_com.android.se"></p>
+<p>然后找到那个 <code>steam.bak</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905154544.png" alt="20200905154544"></p>
+<p>这里推荐用 <a target="_blank" rel="noopener" href="https://www.7-zip.org/">7-Zip</a> 打开，然后提取到当前文件夹</p>
+<p><img src="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905154949.png" alt="20200905154949"></p>
+<p>找到文件夹下的 <code>f</code> 文件夹，用记事本打开里面的文件，名称是 <code>Steamguard-xxx</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905155145.png" alt="20200905155145"></p>
+<p>然后在记事本里找到 <code>secret</code> ，把 <code>=</code> 和 <code>&amp;</code> 之间的一串字符复制下来，然后打开 <code>KeepassXC</code> ,右键你的Steam账号信息，选择 <code>TOTP</code> ，再选择 <code>TOTP设置</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/laurelcafe/Blogimages/keepass/20200905155938.png" alt="20200905155938"></p>
+<p>然后选择 <code>steam令牌设置</code> ，然后在 <code>密匙Key</code> 位置粘贴之前复制的字符，保存就可以了。之后就可以打开手机令牌和电脑进行比照了。</p>
+
+    </article>
+    <!-- license  -->
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2020/08/16/1719094975/" title= "编写博文的软件推荐">
+                    <div class="prevTitle">编写博文的软件推荐</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+    <div id="lv-container" data-id="city" data-uid= MTAyMC81MTI2NC8yNzc0NQ==>
+        <script type="text/javascript">
+            (function (d, s) {
+                var j, e = d.getElementsByTagName(s)[0];
+                if (typeof LivereTower === 'function') { return; }
+                j = d.createElement(s);
+                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+                j.async = true;
+
+                e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+        </script>
+        <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+
+<!-- City版安装代码已完成 -->
+    
+    
+    <!-- gitalk评论 -->
+
+    <!-- utteranc评论 -->
+
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
+        </div>
+        <!--
+ * @title: 
+ * @subtitle: 
+ * @date: 2020-08-02 03:52:40
+ * @tags: 
+ * - 
+ * - 
+ * - 
+ * @header_image: 
+-->
+<footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:w467554902@gmail.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/laurelcafe" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+            
+                <a href="//t.me/Leafs_ss" class="iconfont-archer telegram" target="_blank" title=telegram></a>
+            
+        
+    
+        
+            
+                <a href="//twitter.com/Leafs_0_" class="iconfont-archer twitter" target="_blank" title=twitter></a>
+            
+        
+    
+        
+            
+                <a href="//steamcommunity.com/id/Leafs_/" class="iconfont-archer steam" target="_blank" title=steam></a>
+            
+        
+    
+        
+            
+                <a href="/atom.xml" class="iconfont-archer rss" target="_blank" title=rss></a>
+            
+        
+    
+
+    </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+    <div class="busuanzi-container">
+    
+     
+    <span id="busuan_pv">总访问量 <span id="busuanzi_value_site_pv"></span> </span>
+    
+    </div>
+    
+</footer>
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E7%9B%B8%E5%85%B3"><span class="toc-number">1.</span> <span class="toc-text">使用相关</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#KeepassXC"><span class="toc-number">2.</span> <span class="toc-text">KeepassXC</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#KeepassXC%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">2.1.</span> <span class="toc-text">KeepassXC的基本使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#KeepassXC%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E9%93%BE%E6%8E%A5"><span class="toc-number">2.2.</span> <span class="toc-text">KeepassXC的浏览器链接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Steam%E5%9C%A8PC%E4%B8%8A%E4%BD%BF%E7%94%A8TOTP"><span class="toc-number">3.</span> <span class="toc-text">Steam在PC上使用TOTP</span></a></li></ol>
+    </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 6
+        </div>
+        <!-- search  -->
+        
+    </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> 2020 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/05</span><a class="archive-post-title" href= "/2020/09/05/4060261005/" >KeepassXC的使用</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/16</span><a class="archive-post-title" href= "/2020/08/16/1719094975/" >编写博文的软件推荐</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/05</span><a class="archive-post-title" href= "/2020/08/05/651982267/" >从零开始搭建Blog（三）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/04</span><a class="archive-post-title" href= "/2020/08/04/1807931113/" >从零开始搭建Blog（二）</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/03</span><a class="archive-post-title" href= "/2020/08/03/113157851/" >从零开始搭建Blog</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/02</span><a class="archive-post-title" href= "/2020/08/02/1243066710/" >Hello World</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+        <span class="sidebar-tag-name" data-tags="Blog"><span class="iconfont-archer">&#xe606;</span>Blog</span>
+    
+        <span class="sidebar-tag-name" data-tags="Hexo"><span class="iconfont-archer">&#xe606;</span>Hexo</span>
+    
+        <span class="sidebar-tag-name" data-tags="GitHub"><span class="iconfont-archer">&#xe606;</span>GitHub</span>
+    
+        <span class="sidebar-tag-name" data-tags="Live2D"><span class="iconfont-archer">&#xe606;</span>Live2D</span>
+    
+        <span class="sidebar-tag-name" data-tags="模型"><span class="iconfont-archer">&#xe606;</span>模型</span>
+    
+        <span class="sidebar-tag-name" data-tags="音乐"><span class="iconfont-archer">&#xe606;</span>音乐</span>
+    
+        <span class="sidebar-tag-name" data-tags="APlayer"><span class="iconfont-archer">&#xe606;</span>APlayer</span>
+    
+        <span class="sidebar-tag-name" data-tags="VScode"><span class="iconfont-archer">&#xe606;</span>VScode</span>
+    
+        <span class="sidebar-tag-name" data-tags="扩展"><span class="iconfont-archer">&#xe606;</span>扩展</span>
+    
+        <span class="sidebar-tag-name" data-tags="Keepass"><span class="iconfont-archer">&#xe606;</span>Keepass</span>
+    
+        <span class="sidebar-tag-name" data-tags="Steam"><span class="iconfont-archer">&#xe606;</span>Steam</span>
+    
+        <span class="sidebar-tag-name" data-tags="密码"><span class="iconfont-archer">&#xe606;</span>密码</span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: "/",
+        author: "Leafs"
+    }
+</script>
+    <!-- CDN failover -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ === 'undefined')
+        {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js">\x3C/script>')
+        }
+    </script>
+    <script src="/scripts/main.js"></script>
+    <!-- algolia -->
+    
+    <!-- busuanzi  -->
+    
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
+     
+
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/laurelcafe/item@1.0/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js"></script>
+        
+    <div class="aplayer" 
+        data-id="5160016072" 
+        data-server="netease" 
+        data-type="playlist" 
+        data-fixed="true" 
+        data-autoplay="true" 
+        data-order="random" 
+        data-volume="0.3" 
+        data-theme="#d9f1ff" 
+        data-preload="auto" 
+        data-lrc-type="0">
+    </div>
+         
+    <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/noireswim.model.json"},"display":{"position":"right","width":250,"height":500,"vOffset":0},"mobile":{"show":false},"react":{"opacity":1},"dialog":{"enable":false,"hitokoto":false},"log":false});</script></body>
+    
+</html>
+
+
